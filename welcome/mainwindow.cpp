@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "page1.h"
 #include "ui_mainwindow.h"
+#include<QMessageBox>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -22,9 +23,16 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_enter_clicked()
 {
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+    if (username ==  "admin" && password=="admin"){
    hide();
    dial=new page1(this);
    dial->show();
 
+}
+    else{
+        QMessageBox::warning(this,"LogIn","Email and Password is incorrect");
+    }
 }
 

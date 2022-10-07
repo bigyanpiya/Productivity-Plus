@@ -19,6 +19,92 @@ background-color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item alignment="Qt::AlignVCenter">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#ffffff;&quot;&gt;Email:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_username">
+        <property name="whatsThis">
+         <string>&lt;html&gt;
+&lt;body bgcolor=&quot;white&quot;&gt;
+&lt;input type=&quot;password&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">*{background-color:rgb(218, 218, 218);}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignVCenter">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#ffffff;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_password">
+        <property name="toolTip">
+         <string>&lt;html&gt;
+&lt;body&gt;
+&lt;input type=&quot;password&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+        </property>
+        <property name="whatsThis">
+         <string>&lt;html&gt;
+&lt;body&gt;
+&lt;input type=&quot;password&quot;&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">*{background-color:rgb(216, 216, 216);}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="enter">
+        <property name="font">
+         <font>
+          <family>Segoe Script</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Enter</string>
+        </property>
+       </widget>
+      </item>
+      <item alignment="Qt::AlignBottom">
+       <widget class="QPushButton" name="pushButton">
+        <property name="styleSheet">
+         <string notr="true">*{background-color:rgb(207, 207, 207);
+}</string>
+        </property>
+        <property name="text">
+         <string>Don't have an account? Sign Up Now!</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
     <item alignment="Qt::AlignHCenter">
      <widget class="QLabel" name="image">
       <property name="text">
@@ -41,22 +127,6 @@ text color:white:
       </property>
       <property name="text">
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;FOCUS ON BEING PRODUCTIVE INSTEAD OF BUSY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="enter">
-      <property name="font">
-       <font>
-        <family>Segoe Script</family>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);</string>
-      </property>
-      <property name="text">
-       <string>Enter</string>
       </property>
      </widget>
     </item>

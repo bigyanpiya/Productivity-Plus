@@ -34,7 +34,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -44,9 +44,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -66,10 +66,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome\\main.cpp"
+        "D:\\Productivity-Plus\\welcome\\main.cpp"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/welcome/main.cpp"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/welcome/main.cpp"
 },
 {
     "arguments": [
@@ -106,7 +106,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -116,9 +116,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -138,10 +138,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome\\mainwindow.cpp"
+        "D:\\Productivity-Plus\\welcome\\mainwindow.cpp"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/welcome/mainwindow.cpp"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/welcome/mainwindow.cpp"
 },
 {
     "arguments": [
@@ -178,7 +178,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -188,9 +188,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -210,10 +210,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome\\page1.cpp"
+        "D:\\Productivity-Plus\\welcome\\page1.cpp"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/welcome/page1.cpp"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/welcome/page1.cpp"
 },
 {
     "arguments": [
@@ -250,7 +250,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -260,9 +260,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -282,10 +282,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome\\mainwindow.h"
+        "D:\\Productivity-Plus\\welcome\\mainwindow.h"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/welcome/mainwindow.h"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/welcome/mainwindow.h"
 },
 {
     "arguments": [
@@ -322,7 +322,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -332,9 +332,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -354,10 +354,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome\\page1.h"
+        "D:\\Productivity-Plus\\welcome\\page1.h"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/welcome/page1.h"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/welcome/page1.h"
 },
 {
     "arguments": [
@@ -394,7 +394,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -404,9 +404,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -426,10 +426,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\ui_mainwindow.h"
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\ui_page1.h"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/ui_mainwindow.h"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/ui_page1.h"
 },
 {
     "arguments": [
@@ -466,7 +466,7 @@
         "-I",
         "C:\\Qt\\Tools\\QtCreator\\share\\qtcreator\\cplusplus\\wrappedQtHeaders\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\welcome",
+        "D:\\Productivity-Plus\\welcome",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include",
         "-I",
@@ -476,9 +476,9 @@
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\include\\QtCore",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\debug",
         "-I",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug",
         "-I",
         "C:\\Qt\\6.3.2\\mingw_64\\mkspecs\\win32-g++",
         "-isystem",
@@ -498,9 +498,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\ASUS\\Downloads\\welcome-20220917T181749Z-0018\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\ui_page1.h"
+        "D:\\Productivity-Plus\\build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug\\ui_mainwindow.h"
     ],
-    "directory": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
-    "file": "C:/Users/ASUS/Downloads/welcome-20220917T181749Z-0018/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/ui_page1.h"
+    "directory": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/.qtc_clangd",
+    "file": "D:/Productivity-Plus/build-welcome-Desktop_Qt_6_3_2_MinGW_64_bit-Debug/ui_mainwindow.h"
 }
 ]

@@ -17,6 +17,20 @@
    <string notr="true">background-color: rgb(255, 255, 255)</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <item alignment="Qt::AlignRight">
+    <widget class="QToolButton" name="toolButton">
+     <property name="text">
+      <string>[ ]</string>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignRight">
+    <widget class="QToolButton" name="toolButton_2">
+     <property name="text">
+      <string>--</string>
+     </property>
+    </widget>
+   </item>
    <item>
     <widget class="QPushButton" name="pushButton_2">
      <property name="styleSheet">

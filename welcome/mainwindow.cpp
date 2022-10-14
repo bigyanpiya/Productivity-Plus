@@ -32,7 +32,7 @@ void MainWindow::on_enter_clicked()
 
 }
     else{
-        QMessageBox::warning(this,"LogIn","Email and Password is incorrect");
+        QMessageBox::warning(this,"Email or Password is incorrect","Try Again");
     }
 }
 

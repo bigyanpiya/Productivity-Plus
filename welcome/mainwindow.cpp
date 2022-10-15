@@ -9,7 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QPixmap pix("C:/Users/ASUS/OneDrive/Documents/logo.png");
+    QPixmap pix(":/img/photos/logo.png");
     ui->image->setPixmap(pix);
 }
 

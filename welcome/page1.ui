@@ -32,6 +32,21 @@
     </widget>
    </item>
    <item>
+    <widget class="QCalendarWidget" name="calendarWidget">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">*{
+navagationBar color=blue;
+}</string>
+     </property>
+     <property name="navigationBarVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
     <widget class="QPushButton" name="pushButton_2">
      <property name="styleSheet">
       <string notr="true">
@@ -49,21 +64,6 @@ background-color: rgb(78, 79, 80);</string>
      </property>
      <property name="text">
       <string>Add course</string>
-     </property>
-    </widget>
-   </item>
-   <item>
-    <widget class="QCalendarWidget" name="calendarWidget">
-     <property name="autoFillBackground">
-      <bool>false</bool>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">*{
-navagationBar color=blue;
-}</string>
-     </property>
-     <property name="navigationBarVisible">
-      <bool>true</bool>
      </property>
     </widget>
    </item>

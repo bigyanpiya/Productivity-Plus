@@ -19,4 +19,4 @@ private:
     Ui::page2 *ui;
 };
 
-#endif // PAGE1_H
+#endif // PAGE2_H

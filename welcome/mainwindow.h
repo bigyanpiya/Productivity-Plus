@@ -3,7 +3,7 @@
 
 
 #include <QMainWindow>
-#include"page1.h"
+#include"mainwindow1.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -21,6 +21,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    page1 *dial;
+    MainWindow1 *dial;
 };
 #endif // MAINWINDOW_H

@@ -4,6 +4,10 @@
 
 #include <QMainWindow>
 #include"mainwindow1.h"
+#include<QtSql>
+#include<QDebug>
+#include<QFileInfo>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -22,5 +26,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     MainWindow1 *dial;
+       QSqlDatabase members;
 };
 #endif // MAINWINDOW_H

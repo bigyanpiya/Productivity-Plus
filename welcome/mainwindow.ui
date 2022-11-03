@@ -108,6 +108,16 @@ background-color: rgb(0, 0, 0);</string>
       </item>
      </layout>
     </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(85, 255, 127);</string>
+      </property>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+    </item>
     <item alignment="Qt::AlignHCenter">
      <widget class="QLabel" name="image">
       <property name="text">

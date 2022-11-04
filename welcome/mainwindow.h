@@ -23,6 +23,8 @@ public:
 private slots:
     void on_enter_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     MainWindow1 *dial;

@@ -4,6 +4,7 @@
 
 #include <QMainWindow>
 #include"mainwindow1.h"
+#include "mainwindow2.h"
 #include<QtSql>
 #include<QDebug>
 #include<QFileInfo>
@@ -27,7 +28,11 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
     MainWindow1 *dial;
+
+    MainWindow2 *dial2;
+
        QSqlDatabase members;
 };
 #endif // MAINWINDOW_H

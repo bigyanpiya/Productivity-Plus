@@ -1,6 +1,4 @@
 #include "mainwindow.h"
-#include "mainwindow1.h"
-#include "mainwindow2.h"
 #include "ui_mainwindow.h"
 #include<QMessageBox>
 
@@ -67,7 +65,8 @@ void MainWindow::on_enter_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-    hide();
-    dial= new MainWindow2(this);
+ hide();
+    dial2= new MainWindow2(this);
+    dial2->showMaximized();
 }
 

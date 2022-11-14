@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
      members=QSqlDatabase::addDatabase("QSQLITE");
-           members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/member.db");
+           members.setDatabaseName("E:/Productivity-Plus/welcome/member.db");
            if( members.open())
                    ui->label_4->setText("Connected");
            else

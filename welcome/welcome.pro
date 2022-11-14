@@ -9,20 +9,17 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    calpop.cpp \
     main.cpp \
-    mainwindow.cpp \
-    mainwindow1.cpp \
-    mainwindow2.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    mainwindow1.h \
-    mainwindow2.h
+    calpop.h \
+    mainwindow.h
 
 FORMS += \
-    mainwindow.ui \
-    mainwindow1.ui \
-    mainwindow2.ui
+    calpop.ui \
+    mainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

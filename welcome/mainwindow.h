@@ -3,8 +3,8 @@
 
 
 #include <QMainWindow>
-#include"mainwindow1.h"
-#include "mainwindow2.h"
+#include"calpop.h"
+//#include "mainwindow2.h"
 #include<QtSql>
 #include<QDebug>
 #include<QFileInfo>
@@ -24,14 +24,20 @@ public:
 private slots:
     void on_enter_clicked();
 
+//    void on_pushButton_clicked();
+
     void on_pushButton_clicked();
+
+
+    void on_calendar_clicked(const QDate &date);
 
 private:
     Ui::MainWindow *ui;
 
-    MainWindow1 *dial;
+    calpop *dial;
 
-    MainWindow2 *dial2;
+//    MainWindow2 *dial2;
+
 
        QSqlDatabase members;
 };

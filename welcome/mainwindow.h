@@ -31,6 +31,8 @@ private slots:
 
     void on_calendar_clicked(const QDate &date);
 
+    void on_signup_clicked();
+
 private:
     Ui::MainWindow *ui;
 

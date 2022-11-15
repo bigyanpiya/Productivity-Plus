@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
      members=QSqlDatabase::addDatabase("QSQLITE");
-           members.setDatabaseName("E:/Productivity-Plus/welcome/member.db");
+           members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/member.db");
            if( members.open())
                    ui->label_4->setText("Connected");
            else
@@ -40,10 +40,12 @@ void MainWindow::on_enter_clicked()
       }
       QSqlQuery qry;
       if (qry.exec("select * from members where username = '" +username + "'  and password  ='" + password +"'")){
+
           while(qry.next()){
-              QString name = qry.value(1).toString();
-              ui->nameLabel->setText(name);
               ui->stackedWidget->setCurrentIndex(1);
+             QString books = qry.value(4).toString();
+             ui->nameLabel->setText(books);
+
           };
 //        int count = 0;
 //          while(qry.next()){
@@ -80,4 +82,19 @@ void MainWindow::on_calendar_clicked(const QDate &date)
     dial->show();
 
 }
+
+
+void MainWindow::on_signup_clicked()
+    {
+
+        QString username1 = ui->lineEdit->text();
+        QString password2 = ui->lineEdit_2->text();
+        QString name1=ui->lineEdit_3->text();
+                QSqlQuery qry1;
+        qry1.exec("Insert Into members(name,username,password)Values '"+name1+"','"+username1+"','"+password2+"');");
+
+
+      }
+
+
 

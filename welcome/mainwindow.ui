@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>965</width>
-    <height>581</height>
+    <width>1536</width>
+    <height>846</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,31 +22,15 @@ background-color: rgb(0, 0, 0);</string>
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>40</x>
-          <y>60</y>
-          <width>991</width>
-          <height>103</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(85, 255, 127);</string>
-        </property>
-        <property name="text">
-         <string>Status</string>
-        </property>
-       </widget>
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>1271</width>
+          <x>10</x>
+          <y>10</y>
+          <width>1491</width>
           <height>43</height>
          </rect>
         </property>
@@ -138,110 +122,53 @@ background-color: rgb(0, 0, 0);</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="image">
-        <property name="geometry">
-         <rect>
-          <x>460</x>
-          <y>170</y>
-          <width>781</width>
-          <height>311</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label">
+       <widget class="QWidget" name="verticalLayoutWidget">
         <property name="geometry">
          <rect>
           <x>330</x>
-          <y>510</y>
-          <width>801</width>
-          <height>51</height>
+          <y>90</y>
+          <width>881</width>
+          <height>591</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <pointsize>18</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(0, 0, 0);</string>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;FOCUS ON BEING PRODUCTIVE INSTEAD OF BUSY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(85, 255, 127);</string>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="image">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>18</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(0, 0, 0);</string>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;FOCUS ON BEING PRODUCTIVE INSTEAD OF BUSY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
       <widget class="QWidget" name="page_2">
-       <widget class="QCalendarWidget" name="calendar">
-        <property name="geometry">
-         <rect>
-          <x>390</x>
-          <y>0</y>
-          <width>961</width>
-          <height>771</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QCalendarWidget QToolButton {
-  	height: 60px;
-  	width: 150px;
-  	color: white;
-  	font-size: 24px;
-  	icon-size: 56px, 56px;
-  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);
-  }
-  QCalendarWidget QMenu {
-  	width: 150px;
-  	left: 20px;
-  	color: white;
-  	font-size: 18px;
-  	background-color: rgb(100, 100, 100);
-  }
-  QCalendarWidget QSpinBox { 
-  	width: 150px; 
-  	font-size:24px; 
-  	color: white; 
-  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
-  	selection-background-color: rgb(136, 136, 136);
-  	selection-color: rgb(255, 255, 255);
-  }
-  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:65px; }
-  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:65px;}
-  QCalendarWidget QSpinBox::up-arrow { width:56px;  height:56px; }
-  QCalendarWidget QSpinBox::down-arrow { width:56px;  height:56px; }
-   
-  /* header row */
-  QCalendarWidget QWidget { alternate-background-color: rgb(128, 128, 128); }
-   
-  /* normal days */
-  QCalendarWidget QAbstractItemView:enabled 
-  {
-  	font-size:24px;  
-  	color: rgb(180, 180, 180);  
-  	background-color: black;  
-  	selection-background-color: rgb(64, 64, 64); 
-  	selection-color: rgb(0, 255, 0); 
-  }
-   
-  /* days in other months */
-  /* navigation bar */
-QCalendarWidget QWidget#qt_calendar_navigationbar
-{ 
-  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
-}
-
-QCalendarWidget QAbstractItemView:disabled 
-{ 
-color: rgb(64, 64, 64); 
-}</string>
-        </property>
-        <property name="verticalHeaderFormat">
-         <enum>QCalendarWidget::NoVerticalHeader</enum>
-        </property>
-       </widget>
        <widget class="QTabWidget" name="tabWidget">
         <property name="enabled">
          <bool>true</bool>
@@ -420,40 +347,114 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          </widget>
         </widget>
        </widget>
+       <widget class="QCalendarWidget" name="calendar">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>0</y>
+          <width>1111</width>
+          <height>751</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QCalendarWidget QToolButton {
+  	height: 60px;
+  	width: 150px;
+  	color: white;
+  	font-size: 24px;
+  	icon-size: 56px, 56px;
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333);
+  }
+  QCalendarWidget QMenu {
+  	width: 150px;
+  	left: 20px;
+  	color: white;
+  	font-size: 18px;
+  	background-color: rgb(100, 100, 100);
+  }
+  QCalendarWidget QSpinBox { 
+  	width: 150px; 
+  	font-size:24px; 
+  	color: white; 
+  	background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
+  	selection-background-color: rgb(136, 136, 136);
+  	selection-color: rgb(255, 255, 255);
+  }
+  QCalendarWidget QSpinBox::up-button { subcontrol-origin: border;  subcontrol-position: top right;  width:65px; }
+  QCalendarWidget QSpinBox::down-button {subcontrol-origin: border; subcontrol-position: bottom right;  width:65px;}
+  QCalendarWidget QSpinBox::up-arrow { width:56px;  height:56px; }
+  QCalendarWidget QSpinBox::down-arrow { width:56px;  height:56px; }
+   
+  /* header row */
+  QCalendarWidget QWidget { alternate-background-color: rgb(128, 128, 128); }
+   
+  /* normal days */
+  QCalendarWidget QAbstractItemView:enabled 
+  {
+  	font-size:24px;  
+  	color: rgb(180, 180, 180);  
+  	background-color: black;  
+  	selection-background-color: rgb(64, 64, 64); 
+  	selection-color: rgb(0, 255, 0); 
+  }
+   
+  /* days in other months */
+  /* navigation bar */
+QCalendarWidget QWidget#qt_calendar_navigationbar
+{ 
+  background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop: 0 #cccccc, stop: 1 #333333); 
+}
+
+QCalendarWidget QAbstractItemView:disabled 
+{ 
+color: rgb(64, 64, 64); 
+}</string>
+        </property>
+        <property name="verticalHeaderFormat">
+         <enum>QCalendarWidget::NoVerticalHeader</enum>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="page_8">
        <widget class="QWidget" name="formLayoutWidget">
         <property name="geometry">
          <rect>
-          <x>320</x>
-          <y>90</y>
-          <width>741</width>
-          <height>211</height>
+          <x>500</x>
+          <y>30</y>
+          <width>591</width>
+          <height>181</height>
          </rect>
         </property>
-        <layout class="QFormLayout" name="formLayout_2">
-         <item row="0" column="0">
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#ffffff;&quot;&gt;sign up fast fucking bitches!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
           <widget class="QLabel" name="label_9">
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Username:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="1">
+         <item row="1" column="1">
           <widget class="QLineEdit" name="lineEdit">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
+         <item row="2" column="0">
           <widget class="QLabel" name="label_10">
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="1">
+         <item row="2" column="1">
           <widget class="QLineEdit" name="lineEdit_2">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -463,14 +464,14 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="0">
+         <item row="3" column="0">
           <widget class="QLabel" name="label_11">
            <property name="text">
             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Re-type Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
-         <item row="2" column="1">
+         <item row="3" column="1">
           <widget class="QLineEdit" name="lineEdit_3">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
@@ -480,7 +481,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="1">
+         <item row="4" column="1">
           <widget class="QPushButton" name="signup">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(217, 217, 217);</string>
@@ -492,23 +493,40 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          </item>
         </layout>
        </widget>
-       <widget class="QLabel" name="label_12">
+       <widget class="QLabel" name="image_2">
         <property name="geometry">
          <rect>
-          <x>430</x>
-          <y>280</y>
-          <width>671</width>
-          <height>431</height>
+          <x>570</x>
+          <y>150</y>
+          <width>511</width>
+          <height>441</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">
-image: url(:/img/photos/logo.png);</string>
+         <string notr="true">image: url(:/img/photos/logo.png);</string>
         </property>
         <property name="text">
-         <string>TextLabel</string>
+         <string/>
         </property>
        </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>620</y>
+          <width>741</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; color:#ffffff;&quot;&gt;FOCUS ON BEING PRODUCTIVE INSTEAD OF BUSY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <zorder>image_2</zorder>
+       <zorder>verticalLayoutWidget_3</zorder>
+       <zorder>formLayoutWidget</zorder>
+       <zorder>verticalLayoutWidget_3</zorder>
+       <zorder>verticalLayoutWidget_3</zorder>
       </widget>
      </widget>
     </item>

@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include"calpop.h"
 //#include "mainwindow2.h"
+#include"dialog.h"
 #include<QtSql>
 #include<QDebug>
 #include<QFileInfo>
@@ -33,10 +34,13 @@ private slots:
 
     void on_signup_clicked();
 
+    void on_signup_2_clicked();
+
 private:
     Ui::MainWindow *ui;
 
     calpop *dial;
+    Dialog *dial1;
 
 //    MainWindow2 *dial2;
 

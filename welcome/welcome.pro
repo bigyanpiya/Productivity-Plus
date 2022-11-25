@@ -10,15 +10,18 @@ CONFIG += c++17
 
 SOURCES += \
     calpop.cpp \
+    dialog.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     calpop.h \
+    dialog.h \
     mainwindow.h
 
 FORMS += \
     calpop.ui \
+    dialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.

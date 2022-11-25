@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
      members=QSqlDatabase::addDatabase("QSQLITE");
-          members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/member.db");
+          members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
            if( members.open())
                    ui->label_4->setText("Connected");
            else
@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     QPixmap pix(":/img/photos/logo.png");
     ui->image->setPixmap(pix);
+//    members.close();
 }
 
 MainWindow::~MainWindow()
@@ -31,6 +32,7 @@ MainWindow::~MainWindow()
 void MainWindow::on_enter_clicked()
 {
 
+
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
       if( !members.isOpen()){
@@ -39,12 +41,16 @@ void MainWindow::on_enter_clicked()
 
       }
       QSqlQuery qry;
-      if (qry.exec("select * from members where username = '" +username + "'  and password  ='" + password +"'")){
+      if (qry.exec("select * from memberss where username = '" +username + "'  and password  ='" + password +"'")){
 
           while(qry.next()){
               ui->stackedWidget->setCurrentIndex(1);
-             QString books = qry.value(4).toString();
+             QString books = qry.value(3).toString();
              ui->nameLabel->setText(books);
+             QString internal = qry.value(4).toString();
+             ui->nameLabel_2->setText(internal);
+             QString assignment = qry.value(5).toString();
+             ui->nameLabel_3->setText(assignment);
 
           };
 //        int count = 0;
@@ -58,43 +64,31 @@ void MainWindow::on_enter_clicked()
 
           }
       else{
-          QMessageBox::about(this,"OPPPSSS", "Enter correct username and password");
+          QMessageBox::critical(this,"ERROR", "<FONT COLOR='red'>Enter Correct username or password</FONT>");
+          }
       }
 
 
 
 
-}
 
 
 
 void MainWindow::on_pushButton_clicked()
 {
-              ui->stackedWidget->setCurrentIndex(2);
+              //ui->stackedWidget->setCurrentIndex(2);
+    dial1=new Dialog;
+    dial1->show();
 }
 
 
 
 
-void MainWindow::on_calendar_clicked(const QDate &date)
+void MainWindow::on_calendar_clicked(const QDate &) //&date)
 {
     dial=new calpop;
     dial->show();
 
 }
-
-
-void MainWindow::on_signup_clicked()
-    {
-
-        QString username1 = ui->lineEdit->text();
-        QString password2 = ui->lineEdit_2->text();
-        QString name1=ui->lineEdit_3->text();
-                QSqlQuery qry1;
-        qry1.exec("Insert Into members(name,username,password)Values '"+name1+"','"+username1+"','"+password2+"');");
-
-
-      }
-
 
 

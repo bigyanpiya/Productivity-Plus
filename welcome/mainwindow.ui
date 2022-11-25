@@ -201,7 +201,7 @@ background-color: rgb(0, 0, 0);</string>
          <bool>true</bool>
         </property>
         <property name="currentIndex">
-         <number>2</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tab1">
          <attribute name="title">
@@ -215,6 +215,9 @@ background-color: rgb(0, 0, 0);</string>
             <width>361</width>
             <height>711</height>
            </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
           </property>
           <widget class="QWidget" name="page_3">
            <widget class="QLabel" name="label_5">
@@ -238,22 +241,21 @@ background-color: rgb(0, 0, 0);</string>
              <string>         Assignments to be completed</string>
             </property>
            </widget>
-           <widget class="QLabel" name="label_6">
+           <widget class="QLabel" name="nameLabel_3">
             <property name="geometry">
              <rect>
-              <x>20</x>
+              <x>60</x>
               <y>80</y>
-              <width>261</width>
-              <height>31</height>
+              <width>241</width>
+              <height>81</height>
              </rect>
             </property>
-            <property name="font">
-             <font>
-              <pointsize>18</pointsize>
-             </font>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
             </property>
             <property name="text">
-             <string>Due Date: </string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </widget>
@@ -297,6 +299,23 @@ background-color: rgb(0, 0, 0);</string>
             </property>
             <property name="text">
              <string>Internals                              Date                                                             </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="nameLabel_2">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>80</y>
+              <width>241</width>
+              <height>81</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </widget>
@@ -422,7 +441,7 @@ color: rgb(64, 64, 64);
           <x>500</x>
           <y>30</y>
           <width>591</width>
-          <height>181</height>
+          <height>218</height>
          </rect>
         </property>
         <layout class="QFormLayout" name="formLayout">
@@ -436,12 +455,12 @@ color: rgb(64, 64, 64);
          <item row="1" column="0">
           <widget class="QLabel" name="label_9">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Username:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QLineEdit" name="lineEdit">
+          <widget class="QLineEdit" name="lineedit1">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
@@ -450,39 +469,42 @@ color: rgb(64, 64, 64);
          <item row="2" column="0">
           <widget class="QLabel" name="label_10">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#ffffff;&quot;&gt;Username&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
          <item row="2" column="1">
-          <widget class="QLineEdit" name="lineEdit_2">
+          <widget class="QLineEdit" name="lineedit2">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
            <property name="echoMode">
-            <enum>QLineEdit::Password</enum>
+            <enum>QLineEdit::Normal</enum>
            </property>
           </widget>
          </item>
          <item row="3" column="0">
           <widget class="QLabel" name="label_11">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Re-type Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
          <item row="3" column="1">
-          <widget class="QLineEdit" name="lineEdit_3">
+          <widget class="QLineEdit" name="lineedit3">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
            <property name="echoMode">
-            <enum>QLineEdit::Password</enum>
+            <enum>QLineEdit::Normal</enum>
            </property>
           </widget>
          </item>
          <item row="4" column="1">
           <widget class="QPushButton" name="signup">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
            <property name="styleSheet">
             <string notr="true">background-color: rgb(217, 217, 217);</string>
            </property>
@@ -522,11 +544,9 @@ color: rgb(64, 64, 64);
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; color:#ffffff;&quot;&gt;FOCUS ON BEING PRODUCTIVE INSTEAD OF BUSY&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
+       <zorder>label_14</zorder>
        <zorder>image_2</zorder>
-       <zorder>verticalLayoutWidget_3</zorder>
        <zorder>formLayoutWidget</zorder>
-       <zorder>verticalLayoutWidget_3</zorder>
-       <zorder>verticalLayoutWidget_3</zorder>
       </widget>
      </widget>
     </item>

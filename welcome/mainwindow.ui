@@ -30,8 +30,8 @@ background-color: rgb(0, 0, 0);</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>1491</width>
-          <height>43</height>
+          <width>941</width>
+          <height>41</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -93,33 +93,6 @@ background-color: rgb(0, 0, 0);</string>
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QPushButton" name="enter">
-           <property name="font">
-            <font>
-             <family>Segoe Script</family>
-             <pointsize>12</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-           <property name="text">
-            <string>Login</string>
-           </property>
-          </widget>
-         </item>
-         <item alignment="Qt::AlignBottom">
-          <widget class="QPushButton" name="pushButton">
-           <property name="styleSheet">
-            <string notr="true">*{background-color:rgb(207, 207, 207);
-}</string>
-           </property>
-           <property name="text">
-            <string>Don't have an account? Sign Up Now!</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </widget>
        <widget class="QWidget" name="verticalLayoutWidget">
@@ -167,6 +140,45 @@ background-color: rgb(0, 0, 0);</string>
          </item>
         </layout>
        </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>840</x>
+          <y>60</y>
+          <width>211</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">*{background-color:rgb(207, 207, 207);
+}</string>
+        </property>
+        <property name="text">
+         <string>Don't have an account? Sign Up Now!</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="enter">
+        <property name="geometry">
+         <rect>
+          <x>970</x>
+          <y>20</y>
+          <width>80</width>
+          <height>25</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe Script</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Login</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="page_2">
        <widget class="QTabWidget" name="tabWidget">
@@ -176,9 +188,9 @@ background-color: rgb(0, 0, 0);</string>
         <property name="geometry">
          <rect>
           <x>-10</x>
-          <y>0</y>
+          <y>10</y>
           <width>391</width>
-          <height>741</height>
+          <height>481</height>
          </rect>
         </property>
         <property name="font">
@@ -201,125 +213,92 @@ background-color: rgb(0, 0, 0);</string>
          <bool>true</bool>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>3</number>
         </property>
         <widget class="QWidget" name="tab1">
          <attribute name="title">
           <string>Assignments  </string>
          </attribute>
-         <widget class="QStackedWidget" name="stackedWidget_2">
+         <widget class="QLabel" name="Assignment">
           <property name="geometry">
            <rect>
             <x>20</x>
-            <y>10</y>
-            <width>361</width>
-            <height>711</height>
+            <y>20</y>
+            <width>221</width>
+            <height>41</height>
            </rect>
           </property>
-          <property name="currentIndex">
-           <number>0</number>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
           </property>
-          <widget class="QWidget" name="page_3">
-           <widget class="QLabel" name="label_5">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>20</y>
-              <width>301</width>
-              <height>41</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(170, 170, 127);</string>
-            </property>
-            <property name="text">
-             <string>         Assignments to be completed</string>
-            </property>
-           </widget>
-           <widget class="QLabel" name="nameLabel_3">
-            <property name="geometry">
-             <rect>
-              <x>60</x>
-              <y>80</y>
-              <width>241</width>
-              <height>81</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: #fff;
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 170, 127);</string>
+          </property>
+          <property name="text">
+           <string>Assignments</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameLabel_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>271</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;
 font: 700 12pt &quot;Segoe UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </widget>
-          <widget class="QWidget" name="page_7"/>
-          <widget class="QWidget" name="page_4"/>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
          </widget>
         </widget>
         <widget class="QWidget" name="tab2">
          <attribute name="title">
           <string>Internals  </string>
          </attribute>
-         <widget class="QStackedWidget" name="stackedWidget_3">
+         <widget class="QLabel" name="Internals">
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>10</y>
-            <width>351</width>
-            <height>501</height>
+            <x>10</x>
+            <y>20</y>
+            <width>221</width>
+            <height>41</height>
            </rect>
           </property>
-          <property name="currentIndex">
-           <number>0</number>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
           </property>
-          <widget class="QWidget" name="page_5">
-           <widget class="QLabel" name="label_7">
-            <property name="geometry">
-             <rect>
-              <x>0</x>
-              <y>10</y>
-              <width>301</width>
-              <height>41</height>
-             </rect>
-            </property>
-            <property name="font">
-             <font>
-              <pointsize>12</pointsize>
-             </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(170, 170, 127);</string>
-            </property>
-            <property name="text">
-             <string>Internals                              Date                                                             </string>
-            </property>
-           </widget>
-           <widget class="QLabel" name="nameLabel_2">
-            <property name="geometry">
-             <rect>
-              <x>40</x>
-              <y>80</y>
-              <width>241</width>
-              <height>81</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: #fff;
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 170, 127);</string>
+          </property>
+          <property name="text">
+           <string>Internals for you</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameLabel_1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>241</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;
 font: 700 12pt &quot;Segoe UI&quot;;</string>
-            </property>
-            <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-          </widget>
-          <widget class="QWidget" name="page_6"/>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
          </widget>
         </widget>
         <widget class="QWidget" name="tab3">
@@ -350,10 +329,48 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="nameLabel">
           <property name="geometry">
            <rect>
-            <x>50</x>
-            <y>70</y>
+            <x>40</x>
+            <y>90</y>
             <width>241</width>
-            <height>81</height>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #fff;
+font: 700 12pt &quot;Segoe UI&quot;;</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab4">
+         <attribute name="title">
+          <string>Project</string>
+         </attribute>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>50</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(170, 170, 127);</string>
+          </property>
+          <property name="text">
+           <string>Work done as of now: </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nameLabel_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>130</y>
+            <width>261</width>
+            <height>61</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -369,10 +386,10 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
        <widget class="QCalendarWidget" name="calendar">
         <property name="geometry">
          <rect>
-          <x>400</x>
-          <y>0</y>
-          <width>1111</width>
-          <height>751</height>
+          <x>620</x>
+          <y>10</y>
+          <width>791</width>
+          <height>741</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -435,86 +452,6 @@ color: rgb(64, 64, 64);
        </widget>
       </widget>
       <widget class="QWidget" name="page_8">
-       <widget class="QWidget" name="formLayoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>500</x>
-          <y>30</y>
-          <width>591</width>
-          <height>218</height>
-         </rect>
-        </property>
-        <layout class="QFormLayout" name="formLayout">
-         <item row="0" column="1">
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#ffffff;&quot;&gt;sign up fast fucking bitches!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_9">
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;name:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="lineedit1">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_10">
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#ffffff;&quot;&gt;Username&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="lineedit2">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-           <property name="echoMode">
-            <enum>QLineEdit::Normal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#ffffff;&quot;&gt;Password:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLineEdit" name="lineedit3">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-           <property name="echoMode">
-            <enum>QLineEdit::Normal</enum>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QPushButton" name="signup">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(217, 217, 217);</string>
-           </property>
-           <property name="text">
-            <string>SIGN UP</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
        <widget class="QLabel" name="image_2">
         <property name="geometry">
          <rect>
@@ -546,7 +483,6 @@ color: rgb(64, 64, 64);
        </widget>
        <zorder>label_14</zorder>
        <zorder>image_2</zorder>
-       <zorder>formLayoutWidget</zorder>
       </widget>
      </widget>
     </item>

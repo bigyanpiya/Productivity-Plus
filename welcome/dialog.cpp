@@ -19,7 +19,7 @@ void Dialog::on_signup_2_clicked()
 {
     {
         members= QSqlDatabase::addDatabase("QSQLITE");
-       members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
+       members.setDatabaseName("C:/Users/Lenovo/OneDrive/Desktop/git/Productivity-Plus/welcome/time.db");
        if (!members.open()){
           qDebug("failed");
        }else{

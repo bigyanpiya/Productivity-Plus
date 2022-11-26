@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
      members=QSqlDatabase::addDatabase("QSQLITE");
-          members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
+          members.setDatabaseName("C:/Users/Lenovo/OneDrive/Desktop/git/Productivity-Plus/welcome/time.db");
            if( members.open())
                    ui->label_4->setText("Connected");
            else
@@ -48,9 +48,11 @@ void MainWindow::on_enter_clicked()
              QString books = qry.value(3).toString();
              ui->nameLabel->setText(books);
              QString internal = qry.value(4).toString();
-             ui->nameLabel_2->setText(internal);
+             ui->nameLabel_1->setText(internal);
              QString assignment = qry.value(5).toString();
-             ui->nameLabel_3->setText(assignment);
+             ui->nameLabel_2->setText(assignment);
+             QString project = qry.value(6).toString();
+             ui->nameLabel_3->setText(project);
 
           };
 //        int count = 0;

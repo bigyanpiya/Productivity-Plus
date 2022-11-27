@@ -1,6 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include"ad.h"
 #include<QMessageBox>
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -10,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
      members=QSqlDatabase::addDatabase("QSQLITE");
-          members.setDatabaseName("C:/Users/Lenovo/OneDrive/Desktop/git/Productivity-Plus/welcome/time.db");
+          members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
            if( members.open())
                    ui->label_4->setText("Connected");
            else
@@ -27,13 +29,28 @@ MainWindow::~MainWindow()
 }
 
 
-
+//QString putInternal(QString q_query){
+//        std::string query = q_query.toLocal8Bit().constData();
+//        std::string local,global;
+//        for(auto e:query){
+//            if(e==','){
+//                global+=local;
+//                global+='\n';
+//                local="";
+//            }else local+=e;
+//        }
+//        global+=local;
+//
+//        return QString::fromLocal8Bit(global);
+//
+//}
 
 void MainWindow::on_enter_clicked()
 {
 
 
     QString username = ui->lineEdit_username->text();
+    this->_username = username;
     QString password = ui->lineEdit_password->text();
       if( !members.isOpen()){
           qDebug()<<"Failed to open";
@@ -94,3 +111,14 @@ void MainWindow::on_calendar_clicked(const QDate &) //&date)
 }
 
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+                  ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_pushButton_3_clicked() {
+    dial3 = new ad(nullptr, this->_username);
+    dial3->show();
+}

@@ -28,10 +28,10 @@ background-color: rgb(0, 0, 0);</string>
        <widget class="QWidget" name="layoutWidget">
         <property name="geometry">
          <rect>
-          <x>10</x>
+          <x>30</x>
           <y>10</y>
-          <width>941</width>
-          <height>41</height>
+          <width>1481</width>
+          <height>43</height>
          </rect>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -93,6 +93,33 @@ background-color: rgb(0, 0, 0);</string>
            </property>
           </widget>
          </item>
+         <item>
+          <widget class="QPushButton" name="enter">
+           <property name="font">
+            <font>
+             <family>Segoe Script</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Login</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="styleSheet">
+            <string notr="true">*{background-color:rgb(207, 207, 207);
+}</string>
+           </property>
+           <property name="text">
+            <string>Don't have an account? Sign Up Now!</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
        <widget class="QWidget" name="verticalLayoutWidget">
@@ -140,45 +167,6 @@ background-color: rgb(0, 0, 0);</string>
          </item>
         </layout>
        </widget>
-       <widget class="QPushButton" name="pushButton">
-        <property name="geometry">
-         <rect>
-          <x>840</x>
-          <y>60</y>
-          <width>211</width>
-          <height>20</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">*{background-color:rgb(207, 207, 207);
-}</string>
-        </property>
-        <property name="text">
-         <string>Don't have an account? Sign Up Now!</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="enter">
-        <property name="geometry">
-         <rect>
-          <x>970</x>
-          <y>20</y>
-          <width>80</width>
-          <height>25</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Segoe Script</family>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>Login</string>
-        </property>
-       </widget>
       </widget>
       <widget class="QWidget" name="page_2">
        <widget class="QTabWidget" name="tabWidget">
@@ -189,8 +177,8 @@ background-color: rgb(0, 0, 0);</string>
          <rect>
           <x>-10</x>
           <y>10</y>
-          <width>391</width>
-          <height>481</height>
+          <width>441</width>
+          <height>591</height>
          </rect>
         </property>
         <property name="font">
@@ -213,7 +201,7 @@ background-color: rgb(0, 0, 0);</string>
          <bool>true</bool>
         </property>
         <property name="currentIndex">
-         <number>3</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tab1">
          <attribute name="title">
@@ -224,7 +212,7 @@ background-color: rgb(0, 0, 0);</string>
            <rect>
             <x>20</x>
             <y>20</y>
-            <width>221</width>
+            <width>381</width>
             <height>41</height>
            </rect>
           </property>
@@ -237,16 +225,16 @@ background-color: rgb(0, 0, 0);</string>
            <string notr="true">background-color: rgb(170, 170, 127);</string>
           </property>
           <property name="text">
-           <string>Assignments</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Assignments Left&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="nameLabel_2">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>50</x>
             <y>90</y>
-            <width>271</width>
-            <height>71</height>
+            <width>321</width>
+            <height>201</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -265,9 +253,9 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="Internals">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>40</x>
             <y>20</y>
-            <width>221</width>
+            <width>321</width>
             <height>41</height>
            </rect>
           </property>
@@ -280,16 +268,16 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <string notr="true">background-color: rgb(170, 170, 127);</string>
           </property>
           <property name="text">
-           <string>Internals for you</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Upcoming Internals&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="nameLabel_1">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>90</y>
-            <width>241</width>
-            <height>61</height>
+            <x>60</x>
+            <y>70</y>
+            <width>331</width>
+            <height>211</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -310,7 +298,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <rect>
             <x>20</x>
             <y>20</y>
-            <width>301</width>
+            <width>371</width>
             <height>41</height>
            </rect>
           </property>
@@ -323,7 +311,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <string notr="true">background-color: rgb(170, 170, 127);</string>
           </property>
           <property name="text">
-           <string>         Books borrowed</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Books Borrowed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="nameLabel">
@@ -331,8 +319,8 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <rect>
             <x>40</x>
             <y>90</y>
-            <width>241</width>
-            <height>61</height>
+            <width>351</width>
+            <height>171</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -351,17 +339,17 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="label_6">
           <property name="geometry">
            <rect>
-            <x>40</x>
-            <y>50</y>
-            <width>171</width>
-            <height>31</height>
+            <x>50</x>
+            <y>30</y>
+            <width>331</width>
+            <height>41</height>
            </rect>
           </property>
           <property name="styleSheet">
            <string notr="true">background-color: rgb(170, 170, 127);</string>
           </property>
           <property name="text">
-           <string>Work done as of now: </string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Work done as of now: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="nameLabel_3">
@@ -369,8 +357,8 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <rect>
             <x>40</x>
             <y>130</y>
-            <width>261</width>
-            <height>61</height>
+            <width>351</width>
+            <height>131</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -386,9 +374,9 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
        <widget class="QCalendarWidget" name="calendar">
         <property name="geometry">
          <rect>
-          <x>620</x>
+          <x>460</x>
           <y>10</y>
-          <width>791</width>
+          <width>1011</width>
           <height>741</height>
          </rect>
         </property>
@@ -448,6 +436,38 @@ color: rgb(64, 64, 64);
         </property>
         <property name="verticalHeaderFormat">
          <enum>QCalendarWidget::NoVerticalHeader</enum>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>670</y>
+          <width>351</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>LOGOUT</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>620</y>
+          <width>351</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>ADD</string>
         </property>
        </widget>
       </widget>

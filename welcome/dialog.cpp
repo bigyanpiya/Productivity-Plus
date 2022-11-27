@@ -19,7 +19,7 @@ void Dialog::on_signup_2_clicked()
 {
     {
         members= QSqlDatabase::addDatabase("QSQLITE");
-       members.setDatabaseName("C:/Users/Lenovo/OneDrive/Desktop/git/Productivity-Plus/welcome/time.db");
+       members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
        if (!members.open()){
           qDebug("failed");
        }else{
@@ -33,7 +33,7 @@ void Dialog::on_signup_2_clicked()
                           "Name VARCHAR(20),"
                           "username VARCHAR(20) ,"
                           "password VARCHAR(20));";
-          QString Name = ui->line1->text();
+          QString name = ui->line1->text();
           QString username = ui->line2->text();
           QString password = ui->line3->text();
           QSqlQuery qry;
@@ -43,7 +43,7 @@ void Dialog::on_signup_2_clicked()
                       "password)"
                       "VALUES(:Name,:username,:password);");
 
-          qry.bindValue(":Name", Name);
+          qry.bindValue(":Name", name);
           qry.bindValue(":username", username);
           qry.bindValue(":password", password);
           if(qry.exec()){

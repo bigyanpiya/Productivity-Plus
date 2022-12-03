@@ -178,7 +178,7 @@ background-color: rgb(0, 0, 0);</string>
           <x>-10</x>
           <y>10</y>
           <width>441</width>
-          <height>591</height>
+          <height>611</height>
          </rect>
         </property>
         <property name="font">
@@ -201,7 +201,7 @@ background-color: rgb(0, 0, 0);</string>
          <bool>true</bool>
         </property>
         <property name="currentIndex">
-         <number>0</number>
+         <number>2</number>
         </property>
         <widget class="QWidget" name="tab1">
          <attribute name="title">
@@ -231,10 +231,10 @@ background-color: rgb(0, 0, 0);</string>
          <widget class="QLabel" name="nameLabel_2">
           <property name="geometry">
            <rect>
-            <x>50</x>
-            <y>90</y>
+            <x>60</x>
+            <y>80</y>
             <width>321</width>
-            <height>201</height>
+            <height>341</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -245,6 +245,38 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>430</y>
+            <width>131</width>
+            <height>125</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLineEdit" name="assignment_no_to_delete">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter no to delete</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>DELETE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
         <widget class="QWidget" name="tab2">
          <attribute name="title">
@@ -253,9 +285,9 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="Internals">
           <property name="geometry">
            <rect>
-            <x>40</x>
+            <x>30</x>
             <y>20</y>
-            <width>321</width>
+            <width>371</width>
             <height>41</height>
            </rect>
           </property>
@@ -274,10 +306,10 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="nameLabel_1">
           <property name="geometry">
            <rect>
-            <x>60</x>
-            <y>70</y>
-            <width>331</width>
-            <height>211</height>
+            <x>50</x>
+            <y>90</y>
+            <width>341</width>
+            <height>331</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -287,6 +319,38 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
           <property name="text">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>440</y>
+            <width>131</width>
+            <height>125</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLineEdit" name="internal_no_to_delete">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter no to delete</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>DELETE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </widget>
         <widget class="QWidget" name="tab3">
@@ -298,7 +362,7 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <rect>
             <x>20</x>
             <y>20</y>
-            <width>371</width>
+            <width>381</width>
             <height>41</height>
            </rect>
           </property>
@@ -317,10 +381,10 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="nameLabel">
           <property name="geometry">
            <rect>
-            <x>40</x>
+            <x>50</x>
             <y>90</y>
-            <width>351</width>
-            <height>171</height>
+            <width>321</width>
+            <height>321</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -330,6 +394,38 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
           <property name="text">
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
+         </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>430</y>
+            <width>131</width>
+            <height>125</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_9">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter no to delete</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>DELETE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </widget>
         <widget class="QWidget" name="tab4">
@@ -339,9 +435,9 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
          <widget class="QLabel" name="label_6">
           <property name="geometry">
            <rect>
-            <x>50</x>
-            <y>30</y>
-            <width>331</width>
+            <x>30</x>
+            <y>20</y>
+            <width>381</width>
             <height>41</height>
            </rect>
           </property>
@@ -349,16 +445,16 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <string notr="true">background-color: rgb(170, 170, 127);</string>
           </property>
           <property name="text">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Work done as of now: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Tasks To Be Completed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
          <widget class="QLabel" name="nameLabel_3">
           <property name="geometry">
            <rect>
-            <x>40</x>
-            <y>130</y>
-            <width>351</width>
-            <height>131</height>
+            <x>60</x>
+            <y>90</y>
+            <width>331</width>
+            <height>331</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -369,14 +465,46 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Name&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
+         <widget class="QWidget" name="verticalLayoutWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>160</x>
+            <y>440</y>
+            <width>131</width>
+            <height>125</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_8">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="placeholderText">
+              <string>Enter no to delete</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>DELETE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </widget>
        <widget class="QCalendarWidget" name="calendar">
         <property name="geometry">
          <rect>
-          <x>460</x>
+          <x>450</x>
           <y>10</y>
-          <width>1011</width>
+          <width>1061</width>
           <height>741</height>
          </rect>
         </property>
@@ -442,7 +570,7 @@ color: rgb(64, 64, 64);
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>670</y>
+          <y>690</y>
           <width>351</width>
           <height>29</height>
          </rect>
@@ -458,7 +586,7 @@ color: rgb(64, 64, 64);
         <property name="geometry">
          <rect>
           <x>40</x>
-          <y>620</y>
+          <y>650</y>
           <width>351</width>
           <height>29</height>
          </rect>

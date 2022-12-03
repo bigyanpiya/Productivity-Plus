@@ -9,21 +9,66 @@
 #include<QtSql>
 #include<QDebug>
 #include<QFileInfo>
+#include<ui_mainwindow.h>
+
+using namespace std;
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
     QString _username;
+    QString getAllBooks();
+
+
+    void putAssignmentsIntoDb(vector<QString>& assgs);
+      void putInternalsIntoDb(vector<QString>& inter);
+      void putBooksIntoDb(vector<QString>& bookss);
+    vector<QString> getAllAssignments();
+       vector<QString> getAllInternals();
+
+
+    void updateAssignment(QString assignments){
+        string __assignments  = "1. " + assignments.toStdString();
+        int i = 2;
+        while(__assignments.find(",") != string::npos){
+            __assignments.replace(__assignments.find(","), strlen(","), "\n" +to_string(i) + ". ");
+            i++;
+        }
+        ui->nameLabel_2->setText(QString::fromStdString(__assignments));
+    }
+    void updateInternal(QString internals){
+        string __internals = "1. " + internals.toStdString();
+        int i = 2;
+        while(__internals.find(",") != string::npos){
+            __internals.replace(__internals.find(","), strlen(","), "\n" +to_string(i) + ". ");
+            i++;
+        }
+        ui->nameLabel_1->setText(QString::fromStdString(__internals));
+    }
+
+
+    void updateBook(QString books){
+        string __books = "1. " + books.toStdString();
+        int i = 2;
+        while(__books.find(",") != string::npos){
+            __books.replace(__books.find(","), strlen(","), "\n" +to_string(i) + ". ");
+            i++;
+        }
+        ui->nameLabel_3->setText(QString::fromStdString(__books));
+
+    }
+
+
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
+
     void on_enter_clicked();
 
 //    void on_pushButton_clicked();
@@ -37,18 +82,22 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_calendar_activated(const QDate &date);
+
 private:
     Ui::MainWindow *ui;
 
     calpop *dial;
     Dialog *dial1;
     ad *dial3;
-
-
-
 //    MainWindow2 *dial2;
 
-
-       QSqlDatabase members;
+   QSqlDatabase members;
 };
 #endif // MAINWINDOW_H

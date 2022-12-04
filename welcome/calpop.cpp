@@ -81,7 +81,7 @@ calpop::calpop(QWidget *parent, const QDate &qd, Ui::MainWindow* mw_ui, int inde
     }
 
     }else if(index == 2){
-        string assignments = mw_ui->nameLabel->text().toStdString();
+        string assignments = mw_ui->nameLabel_4->text().toStdString();
         vector<QString> allAssignments = vector<QString>();
 
         if(assignments.length() > 5){

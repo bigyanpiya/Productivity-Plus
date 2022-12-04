@@ -40,6 +40,12 @@ private slots:
 
     void on_pushButton_2_clicked();
 
+  //  void on_pushButton_10_clicked();
+
+    void on_pushButton_10_clicked();
+
+    void on_calendar_activated(const QDate &date);
+
 private:
     Ui::ad *ui;
     QSqlDatabase members;

@@ -22,14 +22,15 @@ class MainWindow : public QMainWindow {
 
 public:
     QString _username;
-    QString getAllBooks();
+
 
 
     void putAssignmentsIntoDb(vector<QString>& assgs);
       void putInternalsIntoDb(vector<QString>& inter);
-      void putBooksIntoDb(vector<QString>& bookss);
+      void putBooksIntoDb(vector<QString>& bok);
     vector<QString> getAllAssignments();
        vector<QString> getAllInternals();
+       vector<QString> getAllBooks();
 
 
     void updateAssignment(QString assignments){
@@ -59,7 +60,17 @@ public:
             __books.replace(__books.find(","), strlen(","), "\n" +to_string(i) + ". ");
             i++;
         }
-        ui->nameLabel_3->setText(QString::fromStdString(__books));
+        ui->nameLabel_4->setText(QString::fromStdString(__books));
+
+    }
+    void updateproject(QString projects){
+        string __projects = "1. " + projects.toStdString();
+        int i = 2;
+        while(__projects.find(",") != string::npos){
+            __projects.replace(__projects.find(","), strlen(","), "\n" +to_string(i) + ". ");
+            i++;
+        }
+        ui->nameLabel_3->setText(QString::fromStdString(__projects));
 
     }
 
@@ -87,6 +98,9 @@ private slots:
     void on_pushButton_8_clicked();
 
     void on_pushButton_9_clicked();
+
+
+    void on_pushButton_10_clicked();
 
     void on_calendar_activated(const QDate &date);
 

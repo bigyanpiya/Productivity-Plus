@@ -7,6 +7,7 @@ using namespace std;
 
 void __updateAssignment(QString assignments, Ui::MainWindow* __ui);
 void __updateInternal(QString internals, Ui::MainWindow* __ui);
+void __updateBook(QString books, Ui::MainWindow* __ui);
 QString get(QSqlQuery* qry, QString username);
 
 ad::ad(QWidget *parent, QString __username, Ui::MainWindow* _ui) :
@@ -208,7 +209,6 @@ QString ad::getAllAssignments(){
 
 
 void ad::on_pushButton_3_clicked(){
-
     members= QSqlDatabase::addDatabase("QSQLITE", "BIGYAN");
     members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
     members.exec("PRAGMA locking_mode = EXCLUSIVE");
@@ -225,7 +225,7 @@ void ad::on_pushButton_3_clicked(){
           qDebug() << currentBooks;
             if(currentBooks != "_ERR_"){
              QString updateBooks = currentBooks;
-             QDateEdit* qd = ui->dateEdit_3;
+             QDateEdit* qd = ui->dateEdit;
              QString date = qd->date().toString();
              getBook = getBook+ "  (" + date + ")";
 
@@ -250,8 +250,10 @@ void ad::on_pushButton_3_clicked(){
              query.bindValue(":username", this->_username);
 
              if(query.exec()){
+                   __updateBook(updateBooks, ad_mw_ui);
                    qDebug("sucess updating data ");
                    QMessageBox::information(this, "Saved","<FONT COLOR='green'>Sucess updating data</FONT>");
+
                 }else{
                    QMessageBox::critical(this, " not Saved","<FONT COLOR='red'>Error updating data</FONT>");
                 }
@@ -265,7 +267,10 @@ void ad::on_pushButton_3_clicked(){
           //members.close();
 
           qDebug("Db.closed");
+
           members.close();
+          QSqlDatabase::removeDatabase("BIGYAN");
+
 
 
 }
@@ -306,4 +311,28 @@ void __updateInternal(QString internals, Ui::MainWindow* __ui){
     }
     __ui->nameLabel_1->setText(QString::fromStdString(__internals));
 }
+
+void __updateBook(QString books, Ui::MainWindow* __ui){
+    string __books  = "1. " + books.toStdString();
+    int i = 2;
+    while(__books.find(",") != string::npos){
+        __books.replace(__books.find(","), strlen(","), "\n" +to_string(i) + ". ");
+        i++;
+    }
+    __ui->nameLabel_4->setText(QString::fromStdString(__books));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

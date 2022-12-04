@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include <QFileInfo>
 
+
 #include <QDialog>
 
 namespace Ui {
@@ -21,6 +22,8 @@ public:
 
 private slots:
     void on_signup_2_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::Dialog *ui;

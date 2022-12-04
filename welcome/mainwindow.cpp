@@ -50,7 +50,7 @@ void MainWindow::on_enter_clicked() {
              QString assignment = qry.value(5).toString();
                updateAssignment(assignment);
              QString project = qry.value(6).toString();
-             ui->nameLabel_3->setText(project);
+             updateproject(project);
 
           };
 
@@ -262,16 +262,100 @@ vector<QString> MainWindow::getAllInternals(){
         return allInter;
       }
    }
-
-
 }
+
 
 
 void MainWindow::on_calendar_activated(const QDate &qd){
     //QString date = qd->date().toString();
 }
 
-vector<QString> getAllAssignmentsInternals(){
 
+
+
+void MainWindow::putBooksIntoDb(vector<QString>& bok){
+   QString boks = "";
+   for(QString i: bok){
+       boks.append(i);
+       boks.append(",");
+   }
+
+   if(bok.size() > 0){
+       boks.truncate(boks.lastIndexOf(QChar(',')));
+   }
+
+
+   QSqlQuery query(members);
+   query.prepare("UPDATE memberss SET books = :books WHERE username = :username");
+
+   query.bindValue(":books", boks);
+   query.bindValue(":username", this->_username);
+
+   qDebug() << boks;
+   if(query.exec()){
+    updateBook(boks);
+   }
+}
+vector<QString> MainWindow::getAllBooks(){
+    vector<QString> allBok = vector<QString>();
+   if (!members.open()){
+       qDebug() << "CANT OPEN";
+      return allBok;
+   }else{
+      QSqlQuery query = QSqlQuery(members);
+      query.prepare("SELECT books FROM memberss where username = :username;");
+      query.bindValue(":username", _username);
+      if(query.exec()){
+        qDebug() << "SEEMS TO WORK HERE";
+        qDebug() << query.first();
+        // All cases for the CSV data that comes fromt the database
+        // X,Y ✅
+        // X ✅
+        // Empty ✅
+        string allBoks = query.value(0).toString().toStdString();
+        if(allBoks.length() > 5){
+            while(allBoks.find(',') != string::npos){
+                QString book = QString::fromStdString(allBoks.substr(0, allBoks.find(',')));
+                allBoks = allBoks.substr(allBoks.find(',') + 1);
+                allBok.push_back(book);
+            }
+            allBok.push_back(QString::fromStdString(allBoks));
+            qDebug() << QString::fromStdString(allBoks);
+        }
+        return allBok;
+
+      }else{
+        return allBok;
+      }
+   }
 }
 
+
+void MainWindow::on_pushButton_10_clicked()
+{
+
+members= QSqlDatabase::addDatabase("QSQLITE", "BOOKS");
+members.setDatabaseName("C:/Users/ASUS/OneDrive/Desktop/Project/Productivity-Plus/welcome/time.db");
+members.exec("PRAGMA locking_mode = EXCLUSIVE");
+
+try{
+ string bokNotoDelete = ui->lineEdit_9->text().toStdString();
+ int bokNo  = stoi(bokNotoDelete);
+ vector<QString> allBooks = getAllBooks();
+ int noOfBok = allBooks.size();
+
+ if(bokNo < 1 || bokNo > noOfBok){
+ qDebug() << allBooks ;
+        QMessageBox::critical(this, "Err","<FONT COLOR='red'>Enter a valid number</FONT>");
+ }else{
+     allBooks.erase(allBooks.begin() + bokNo - 1);
+     putBooksIntoDb(allBooks);
+ }
+}catch(exception& e){
+        QMessageBox::critical(this, "Err","<FONT COLOR='red'>Please enter a number</FONT>");
+ qDebug() << "The input data was not a number";
+}
+
+members.close();
+QSqlDatabase::removeDatabase("BOOKS");
+}

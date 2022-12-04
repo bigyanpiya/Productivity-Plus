@@ -1,5 +1,6 @@
 #include "dialog.h"
 #include "ui_dialog.h"
+
 #include <QDebug>
 #include <QMessageBox>
 
@@ -63,5 +64,7 @@ void Dialog::on_signup_2_clicked()
 
     }
 }
+
+
 
 
